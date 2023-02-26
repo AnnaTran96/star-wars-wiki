@@ -10,7 +10,7 @@ const Search = () => {
     const navigate = useNavigate('favourites');
     const ref = useRef();
 
-    const [searchWord, setSearchWord] = useState();
+    const [searchWord, setSearchWord] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
