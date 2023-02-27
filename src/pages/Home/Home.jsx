@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import Card from "../../components/Card/Card";
+import Card from "../../components/Cards/Card";
 import Loading from "../../components/Loading/Loading";
 import { getPeople } from "../../store/features/peopleSlice";
 import Error from '../Error/Error';
