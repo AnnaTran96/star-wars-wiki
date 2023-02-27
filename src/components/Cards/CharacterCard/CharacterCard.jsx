@@ -2,12 +2,12 @@
 import { Fragment, useState } from "react";
 import { useSelector } from "react-redux";
 
-import Buttons from "../Button/Buttons";
+import Buttons from "../../Button/Buttons";
 
-import Modal from "../Modal/Modal";
-import "./Card.css";
+import Modal from "../../Modal/Modal";
+import "../Card.css";
 
-const Card = ({ person }) => {
+const CharacterCard = ({ person }) => {
     const [showPlanetModal, setShowPlanetModal] = useState(false);
     const [showStarshipModal, setShowStarshipModal] = useState(false);
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -78,4 +78,4 @@ const Card = ({ person }) => {
     );
 };
 
-export default Card;
+export default CharacterCard;

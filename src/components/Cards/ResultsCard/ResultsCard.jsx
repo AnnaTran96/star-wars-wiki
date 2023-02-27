@@ -1,11 +1,11 @@
-import Card from "./Card";
-import "./Card.css";
+import "../Card.css";
+import CharacterCard from "../CharacterCard/CharacterCard";
 
 const ResultsCard = ({ results, isPeople, isPlanets, isStarships }) => {
     return (
         <>
             {isPeople &&
-                <Card person={results} />
+                <CharacterCard person={results} />
             }
             {isPlanets &&
                 <div className="card-container">

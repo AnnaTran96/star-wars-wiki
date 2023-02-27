@@ -1,4 +1,4 @@
-import Card from "../../components/Cards/Card";
+import CharacterCard from "../../components/Cards/CharacterCard/CharacterCard";
 
 const Favourite = () => {
 
@@ -10,8 +10,8 @@ const Favourite = () => {
         <div className='favourites-container'>
             <h1 className="header-title" >Favourites</h1>
             <div className="cards-container">
-                {savedFavourites && savedFavourites.favourites.map((person, id) => (
-                    <Card
+                {savedFavourites && savedFavourites.favourites && savedFavourites.favourites.map((person, id) => (
+                    <CharacterCard
                         person={person}
                         key={id}
                     />

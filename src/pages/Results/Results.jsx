@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import ResultsCard from "../../components/Cards/ResultsCard";
+import ResultsCard from "../../components/Cards/ResultsCard/ResultsCard";
 import Loading from "../../components/Loading/Loading";
 import Error from '../Error/Error';
 
