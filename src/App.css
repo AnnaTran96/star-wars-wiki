@@ -4,7 +4,7 @@
 
 .header-title {
   font-size: 70px;
-  color: #f4cc3b;
+  color: var(--primary-color);
   text-align: center;
 }
 
@@ -20,10 +20,10 @@
   grid-row-gap: 50px;
 }
 
-.primaryBtn {
-  color: white;
-  background-color: #f4cc3b;
-  border: 1px solid #f4cc3b;
+.primary-button {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
   cursor: pointer;
   margin-right: 30px;
   padding: 10px 40px;
@@ -31,7 +31,7 @@
   font-size: 1.6rem;
 }
 
-.primaryBtn:focus {
+.primary-button:focus {
   outline: none;
 }
 

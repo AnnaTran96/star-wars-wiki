@@ -11,10 +11,10 @@ const Navbar = () => {
     return (
         <div className='navbar'>
             <div className='navbar-links'>
-                <button className='primaryBtn' onClick={redirectToHome}>
+                <button className='primary-button' onClick={redirectToHome}>
                     Home
                 </button>
-                <button className='primaryBtn' onClick={redirectToFavourites}>
+                <button className='primary-button' onClick={redirectToFavourites}>
                     Favourites
                 </button>
             </div>
