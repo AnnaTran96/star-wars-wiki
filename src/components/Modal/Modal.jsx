@@ -17,19 +17,17 @@ const Modal = ({ setIsModalOpen, children, title }) => {
 
     return (
         <div className="modal-container">
-            <div className="darkBG" onClick={() => setIsModalOpen(false)} />
-            <div className="centered">
+            <div className="overlay" onClick={() => setIsModalOpen(false)} />
+            <div className="center">
                 <div className="modal">
-                    <div className="modalHeader">
-                        <h5 className="heading">{title}</h5>
-                    </div>
+                    <h5 className="heading">{title}</h5>
                     {children}
                     <button className="closeBtn" onClick={closeModal}>
                         X
                     </button>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 

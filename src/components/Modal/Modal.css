@@ -11,7 +11,7 @@
     transition: all 0.25s ease;
 }
 
-.darkBG {
+.overlay {
     background-color: rgba(0, 0, 0, 0.849);
     width: 100vw;
     height: 100vh;
@@ -22,7 +22,7 @@
     position: absolute;
 }
 
-.centered {
+.center {
     position: fixed;
     top: 50%;
     left: 50%;
