@@ -1,30 +1,7 @@
-
-import { useState } from "react";
-import { useSelector } from "react-redux";
-
-
 import Card from "./Card";
 import "./Card.css";
 
 const ResultsCard = ({ results, isPeople, isPlanets, isStarships }) => {
-    const [showPlanetModal, setShowPlanetModal] = useState(false);
-    const [showStarshipModal, setShowStarshipModal] = useState(false);
-    const [isModalOpen, setIsModalOpen] = useState(false);
-
-
-    const { planets } = useSelector((state) => state.planets);
-    const { starships } = useSelector((state) => state.starships);
-
-    const titles = {
-        planets: "Planets",
-        starships: "Starships"
-    }
-
-    const openModal = () => {
-        setIsModalOpen(true);
-        document.body.style.overflow = "hidden";
-    }
-
     return (
         <>
             {isPeople &&
