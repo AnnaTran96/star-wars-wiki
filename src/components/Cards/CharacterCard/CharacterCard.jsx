@@ -55,7 +55,7 @@ const CharacterCard = ({ person }) => {
             }
 
             {(isModalOpen && showStarshipModal) &&
-                <Modal setIsModalOpen={setIsModalOpen} title={titles.starshipsTitle}>
+                <Modal setIsModalOpen={setIsModalOpen} title={titles.starships}>
                     {starships.map((starship, index) => (
                         <Fragment key={index}>
                             <div className="starships-container">
