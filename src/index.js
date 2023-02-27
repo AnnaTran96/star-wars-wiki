@@ -27,8 +27,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <App />,
-        errorElement: <Error />,
+        element: <App />
       },
       {
         path: '/favourites',
@@ -38,7 +37,8 @@ const router = createBrowserRouter([
         path: '/results',
         element: <Results />,
       }
-    ]
+    ],
+    errorElement: <Error />
   }
 ]);
 
