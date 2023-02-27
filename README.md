@@ -35,3 +35,5 @@ The app has been built mainly with React and Redux Toolkit.
 Instead of using `createAsyncThunk`, I would use Redux Toolkit RTK Query as it can help eliminate the need to write thunks and reducers to manage data fetching.
 
 Another improvment I would liked to work more on is the styling. For the loading component, I would have created a spinner.
+
+Since the API did not return any image URLs, the cards do not display any images. I would have added some images so that the UI looks more better.
