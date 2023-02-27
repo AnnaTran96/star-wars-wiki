@@ -28,10 +28,10 @@ The app has been built mainly with React and Redux Toolkit.
    npm install
    ```
 
-2. Open a new terminal and run `npm start` to start the app. Head over to [https://localhost:8080/](https://localhost:8080/) to use the app
+2. Open a new terminal and run `npm start` to start the app. This should open a new tab in your browser but if you are not redirected to localhost, head over to [https://localhost:3000/](https://localhost:3000/) to use the app.
 
 ## Future Improvements
 
 Instead of using `createAsyncThunk`, I would use Redux Toolkit RTK Query as it can help eliminate the need to write thunks and reducers to manage data fetching.
 
-Another improvment I would liked to work more on the styling. For the loading component, I would have created a spinner.
+Another improvment I would liked to work more on is the styling. For the loading component, I would have created a spinner.
