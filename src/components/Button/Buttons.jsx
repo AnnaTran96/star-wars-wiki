@@ -8,6 +8,10 @@ import { getStarships } from "../../store/features/starshipsSlice";
 const Buttons = ({ person, openModal, setShowPlanetModal, setShowStarshipModal, titles }) => {
     const dispatch = useDispatch();
     const [showFavourite, setShowFavourite] = useState(true);
+    const favouriteButton = {
+        favourite: "Favourite",
+        removeFavourite: "Remove Favourite"
+    }
 
     const clickedOnPlanetModal = () => {
         dispatch(getPlanets({ planet: person.homeworld }));
@@ -25,16 +29,15 @@ const Buttons = ({ person, openModal, setShowPlanetModal, setShowStarshipModal, 
         openModal();
     }
 
-    const handleFavourite = (person) => {
-        dispatch(addFavourite(person));
-        setShowFavourite(false);
+    const handleFavourite = () => {
+        if (showFavourite) {
+            dispatch(addFavourite(person));
+            setShowFavourite(false);
+        } else {
+            dispatch(removeFavourite(person));
+            setShowFavourite(true);
+        }
     };
-
-    const handleRemoveFavourite = (person) => {
-        dispatch(removeFavourite(person));
-        setShowFavourite(true);
-    };
-
 
     return (
         <div className="buttons">
@@ -46,14 +49,9 @@ const Buttons = ({ person, openModal, setShowPlanetModal, setShowStarshipModal, 
                 :
                 null
             }
-            {showFavourite ?
-                <button className="modalBtn" onClick={() => handleFavourite(person)}>
-                    Favourite
-                </button> :
-                <button className="modalBtn" onClick={() => handleRemoveFavourite(person)}>
-                    Remove Favourite
-                </button>
-            }
+            <button className="modalBtn" onClick={() => handleFavourite(person)}>
+                {showFavourite ? favouriteButton.favourite : favouriteButton.removeFavourite}
+            </button>
         </div>
     );
 };
